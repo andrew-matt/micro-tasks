@@ -1,19 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import {NewComponent} from "./Components/NewComponent";
-
-export const topCars = [
-    {manufacturer:'BMW', model:'m5cs'},
-    {manufacturer:'Mercedes', model:'e63s'},
-    {manufacturer:'Audi', model:'rs6'}
-]
+import {Currency} from "./Components/Currency";
 
 function App() {
-  return (
-    <div className="App">
-      <NewComponent cars={topCars}/>
-    </div>
-  );
+    return <Currency/>
 }
 
 export default App;
