@@ -39,8 +39,7 @@ function App() {
 
 
     function removeTask(id: string, todolistId: string) {
-        tasks[todolistId] = tasks[todolistId].filter(t => t.id !== id);
-        setTasks({...tasks});
+        setTasks({...tasks, [todolistId]: tasks[todolistId].filter(t => t.id !== id)})
     }
 
     function addTask(title: string, todolistId: string) {
